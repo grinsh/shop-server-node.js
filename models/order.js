@@ -1,10 +1,14 @@
 class Order{
-    constructor(id, ordDate, arrivalDate, address, phone, email, complete, userId)
+    constructor(id, ordDate, arrivalDate, address, phone, email, complete, userId, products)
     {
-        ////אתחול כל התכונות
         this.id = id;
         this.ordDate = ordDate;
-        
-        this.products = [];
+        this.arrivalDate = arrivalDate;
+        this.address = address;
+        this.phone = phone;
+        this.email = email;
+        this.complete = complete;
+        this.userId = userId;
+        this.products = products;  //לכאן יוכנס מערך של מוצרים
     }
 }
